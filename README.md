@@ -29,6 +29,10 @@ O repositório é dividido nas seguintes partes:
 - Localizado em: `projetos/Estudos/.agents/rules/mentor-programacao.md` (e outros projetos de estudos).
 - **O que é?** É uma Rule altamente customizada que transforma a IA num **Mentor Rigoroso**. Em vez de apenas dar a resposta em código, o Tutor foi configurado para questionar, exigir boas práticas, fazer code reviews rígidos e aplicar o que chamamos de *Segurança Defensiva/AppSec* antes de aprovar uma solução.
 
+### 🔄 Perfil Entre Projetos (Cross-project Profile)
+- **Novidade (a partir do ai-memory >= 2.6.0):** O sistema agora conta com uma funcionalidade avançada onde a própria inteligência artificial age como "observadora dos seus hábitos". Se você tem padrões recorrentes (como preferir usar determinado framework de testes ou gerenciador de pacotes), o `ai-memory` identifica, salva essas preferências como um "Perfil Global" privado no seu banco SQLite e **injeta essas preferências como base padrão sempre que você abrir um projeto novo**.
+- Isso poupa o retrabalho de ter que ditar suas preferências básicas para o agente o tempo todo, funcionando de forma complementar e não-conflitante com o rigor do **Tutor de Programação**.
+
 ---
 
 ## 2. Como usar este repositório? (Instalação)
@@ -36,8 +40,9 @@ O repositório é dividido nas seguintes partes:
 Para facilitar a vida de quem quer usar este modelo, criei um script instalador.
 
 ### Pré-requisitos:
-1. Você precisa ter o binário do **AI Memory (Rust)** instalado no seu PATH. (Consulte a documentação oficial do Antigravity/Fábio Akita para obter o instalador ou binário do `ai-memory`).
+1. Você precisa ter o binário do **AI Memory (Rust)** instalado no seu PATH. Recomenda-se a versão mais atualizada (`>= 2.6.0`) para suporte ao Perfil Global. (Consulte o repositório oficial do Fábio Akita `akitaonrails/ai-memory` para obter o binário compilado).
 2. Estar utilizando um ambiente Linux ou WSL.
+3. Certifique-se de que o **serviço do ai-memory esteja rodando via systemd** (isso garante que ele inicie com o seu SO e fique disponível para o Antigravity).
 
 ### Instalação Passo a Passo:
 
