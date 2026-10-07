@@ -1,0 +1,123 @@
+2026-09-29T10:45:34.063632Z  INFO ai_memory_cli: ai-memory starting version="2.4.0" server_url=http://127.0.0.1:49374 data_dir=/home/edmar/.local/share/ai-memory bind=127.0.0.1:49374
+2026-09-29T10:45:34.064250Z  INFO ai_memory_cli::commands::serve: single-instance serve lock held lock=/home/edmar/.local/share/ai-memory/.serve.lock
+2026-09-29T10:45:34.176039Z  INFO refinery_core::traits: current version: 66
+2026-09-29T10:45:34.176088Z  INFO refinery_core::traits::sync: no migrations to apply
+2026-09-29T10:45:34.176096Z  INFO refinery_core::traits::sync: preparing to apply 0 migrations: Map {
+    iter: Iter(
+        [],
+    ),
+}
+2026-09-29T10:45:34.955857Z  INFO ai_memory_cli::commands::serve: embedder enabled provider="local" model="all-MiniLM-L6-v2" dim=384
+2026-09-29T10:45:34.989330Z  INFO ai_memory_cli::commands::serve: starting wiki watcher root=/home/edmar/.local/share/ai-memory/wiki workspace=default project=scratch
+2026-09-29T10:45:35.047761Z  INFO ai_memory_cli::commands::serve: active-project isolation mode mode=PerActor session_ttl_secs=3600 max_entries=4096
+2026-09-29T10:45:35.056713Z  INFO ai_memory_cli::commands::serve: AI_MEMORY_LLM_PROVIDER unset; memory_consolidate disabled, PreCompact falls back to rule-based checkpoint, lint runs rule-based only
+2026-09-29T10:45:35.056755Z  INFO ai_memory_cli::commands::serve: auto-improve scheduler enabled but no LLM provider is configured; job not started
+2026-09-29T10:45:35.056761Z  INFO ai_memory_cli::commands::serve: scheduled maintenance started jobs=4
+2026-09-29T10:45:35.057017Z  INFO ai_memory_cli::commands::serve: HTTP Host-header allowlist allowed_hosts=["localhost", "127.0.0.1", "::1"]
+2026-09-29T10:45:35.057023Z  INFO ai_memory_cli::commands::serve: MCP Streamable HTTP transport mode stateful=false
+2026-09-29T10:45:35.060663Z  INFO ai_memory_cli::commands::serve: MCP HTTP server ready (POST /mcp, POST /hook, Ctrl-C to stop) local_addr=127.0.0.1:49374 auth=false body_limit_mb=10
+2026-09-29T10:45:45.667956Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2026-07-28"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:45:45.668275Z  WARN serve_inner: rmcp::service: response error id=1 error=ErrorData { code: ErrorCode(-32601), message: "server/discover", data: None }
+2026-09-29T10:45:45.668560Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:45:45.668696Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:45:45.671658Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:45:45.671956Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:45:45.671982Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:45:45.677022Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:45:45.677191Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:45:45.677212Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:46:05.115351Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:46:35.064574Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:47:05.065512Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:47:35.063637Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:48:05.074648Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:48:35.082672Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:49:05.072893Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:49:35.070431Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:49:55.312092Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:49:55.347527Z  WARN serve_inner: rmcp::service: response error id=4 error=ErrorData { code: ErrorCode(-32602), message: "workspace '/home/edmar/projetos/Estudos' not found", data: None }
+2026-09-29T10:49:55.347599Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:49:55.347627Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:50:02.652884Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:50:02.654555Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:50:02.654588Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:50:05.066856Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:50:07.119665Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:50:07.122496Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:50:07.122563Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:50:11.286420Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:50:11.345923Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:50:11.345942Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:50:20.312577Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:50:20.314314Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:50:20.314350Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:50:22.778436Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:50:22.779420Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:50:22.779445Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:50:26.474002Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-09-29T10:50:26.475228Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-09-29T10:50:26.475283Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-09-29T10:50:35.067294Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:51:05.063967Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:51:35.065737Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:52:05.065012Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:52:35.072880Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:53:05.070670Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:53:35.065663Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:54:05.105311Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:54:35.065294Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:55:05.067769Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:55:35.109180Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:56:05.075347Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:56:35.103463Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:57:05.111101Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:57:35.099483Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:58:05.116226Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:58:35.106378Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:59:05.100300Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T10:59:35.106875Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:00:05.064898Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:00:35.065524Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:01:05.067432Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:01:35.112396Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:02:05.085174Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:02:35.066244Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:03:05.103621Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:03:35.089915Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:04:05.100561Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:04:35.114780Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:05:05.098801Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:05:35.104183Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:06:05.071260Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:06:35.103425Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:07:05.066910Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:07:35.064781Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:08:05.085273Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:08:35.103938Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:09:05.068184Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:09:35.069812Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:10:05.078872Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:10:35.073733Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:11:05.106916Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:11:35.065729Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:12:05.086174Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=45 skipped_orphans=0 skipped_purged_sessions=0
+2026-09-29T11:12:21.457289Z  INFO ai_memory_cli::commands::serve: shutdown signal received; draining signal="SIGTERM"
+2026-09-29T21:36:35.065255Z  INFO ai_memory_cli: ai-memory starting version="2.4.0" server_url=http://127.0.0.1:49374 data_dir=/home/edmar/.local/share/ai-memory bind=127.0.0.1:49374
+2026-09-29T21:36:35.068095Z  INFO ai_memory_cli::commands::serve: single-instance serve lock held lock=/home/edmar/.local/share/ai-memory/.serve.lock
+2026-09-29T21:36:35.190384Z  INFO refinery_core::traits: current version: 66
+2026-09-29T21:36:35.190448Z  INFO refinery_core::traits::sync: no migrations to apply
+2026-09-29T21:36:35.190455Z  INFO refinery_core::traits::sync: preparing to apply 0 migrations: Map {
+    iter: Iter(
+        [],
+    ),
+}
+2026-09-29T21:36:36.057488Z  INFO ai_memory_cli::commands::serve: embedder enabled provider="local" model="all-MiniLM-L6-v2" dim=384
+2026-09-29T21:36:36.091049Z  INFO ai_memory_cli::commands::serve: starting wiki watcher root=/home/edmar/.local/share/ai-memory/wiki workspace=default project=scratch
+2026-09-29T21:36:36.158005Z  INFO ai_memory_cli::commands::serve: active-project isolation mode mode=PerActor session_ttl_secs=3600 max_entries=4096
+2026-09-29T21:36:36.164437Z  INFO ai_memory_cli::commands::serve: AI_MEMORY_LLM_PROVIDER unset; memory_consolidate disabled, PreCompact falls back to rule-based checkpoint, lint runs rule-based only
+2026-09-29T21:36:36.164514Z  INFO ai_memory_cli::commands::serve: auto-improve scheduler enabled but no LLM provider is configured; job not started
+2026-09-29T21:36:36.164542Z  INFO ai_memory_cli::commands::serve: scheduled maintenance started jobs=4
+2026-09-29T21:36:36.165029Z  INFO ai_memory_cli::commands::serve: HTTP Host-header allowlist allowed_hosts=["localhost", "127.0.0.1", "::1"]
+2026-09-29T21:36:36.165059Z  INFO ai_memory_cli::commands::serve: MCP Streamable HTTP transport mode stateful=false
+2026-09-29T21:36:36.166962Z  INFO ai_memory_cli::commands::serve: MCP HTTP server ready (POST /mcp, POST /hook, Ctrl-C to stop) local_addr=127.0.0.1:49374 auth=false body_limit_mb=10
+2026-09-29T21:36:49.428742Z  INFO ai_memory_cli::commands::serve: shutdown signal received; draining signal="SIGTERM"

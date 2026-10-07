@@ -1,0 +1,452 @@
+2026-10-06T01:20:41.427849Z  INFO ai_memory_cli: ai-memory starting version="2.4.0" server_url=http://127.0.0.1:49374 data_dir=/home/edmar/.local/share/ai-memory bind=127.0.0.1:49374
+2026-10-06T01:20:41.428008Z  INFO ai_memory_cli::commands::serve: single-instance serve lock held lock=/home/edmar/.local/share/ai-memory/.serve.lock
+2026-10-06T01:20:41.573454Z  INFO refinery_core::traits: current version: 66
+2026-10-06T01:20:41.573496Z  INFO refinery_core::traits::sync: no migrations to apply
+2026-10-06T01:20:41.573507Z  INFO refinery_core::traits::sync: preparing to apply 0 migrations: Map {
+    iter: Iter(
+        [],
+    ),
+}
+2026-10-06T01:20:42.365694Z  INFO ai_memory_cli::commands::serve: embedder enabled provider="local" model="all-MiniLM-L6-v2" dim=384
+2026-10-06T01:20:42.414315Z  INFO ai_memory_cli::commands::serve: starting wiki watcher root=/home/edmar/.local/share/ai-memory/wiki workspace=default project=scratch
+2026-10-06T01:20:42.651330Z  INFO ai_memory_cli::commands::serve: active-project isolation mode mode=PerActor session_ttl_secs=3600 max_entries=4096
+2026-10-06T01:20:42.657598Z  INFO ai_memory_cli::commands::serve: AI_MEMORY_LLM_PROVIDER unset; memory_consolidate disabled, PreCompact falls back to rule-based checkpoint, lint runs rule-based only
+2026-10-06T01:20:42.657705Z  INFO ai_memory_cli::commands::serve: auto-improve scheduler enabled but no LLM provider is configured; job not started
+2026-10-06T01:20:42.657732Z  INFO ai_memory_cli::commands::serve: scheduled maintenance started jobs=4
+2026-10-06T01:20:42.667987Z  INFO ai_memory_cli::commands::serve: HTTP Host-header allowlist allowed_hosts=["localhost", "127.0.0.1", "::1"]
+2026-10-06T01:20:42.667999Z  INFO ai_memory_cli::commands::serve: MCP Streamable HTTP transport mode stateful=false
+2026-10-06T01:20:42.669911Z  INFO ai_memory_cli::commands::serve: MCP HTTP server ready (POST /mcp, POST /hook, Ctrl-C to stop) local_addr=127.0.0.1:49374 auth=false body_limit_mb=10
+2026-10-06T01:20:56.640135Z  INFO ai_memory_cli::commands::serve: shutdown signal received; draining signal="SIGTERM"
+2026-10-06T02:09:17.670655Z  INFO ai_memory_cli: ai-memory starting version="2.4.0" server_url=http://127.0.0.1:49374 data_dir=/home/edmar/.local/share/ai-memory bind=127.0.0.1:49374
+2026-10-06T02:09:17.672118Z  INFO ai_memory_cli::commands::serve: single-instance serve lock held lock=/home/edmar/.local/share/ai-memory/.serve.lock
+2026-10-06T02:09:17.795232Z  INFO refinery_core::traits: current version: 66
+2026-10-06T02:09:17.795258Z  INFO refinery_core::traits::sync: no migrations to apply
+2026-10-06T02:09:17.795264Z  INFO refinery_core::traits::sync: preparing to apply 0 migrations: Map {
+    iter: Iter(
+        [],
+    ),
+}
+2026-10-06T02:09:18.595722Z  INFO ai_memory_cli::commands::serve: embedder enabled provider="local" model="all-MiniLM-L6-v2" dim=384
+2026-10-06T02:09:18.639293Z  INFO ai_memory_cli::commands::serve: starting wiki watcher root=/home/edmar/.local/share/ai-memory/wiki workspace=default project=scratch
+2026-10-06T02:09:18.707667Z  INFO ai_memory_cli::commands::serve: active-project isolation mode mode=PerActor session_ttl_secs=3600 max_entries=4096
+2026-10-06T02:09:18.713665Z  INFO ai_memory_cli::commands::serve: AI_MEMORY_LLM_PROVIDER unset; memory_consolidate disabled, PreCompact falls back to rule-based checkpoint, lint runs rule-based only
+2026-10-06T02:09:18.713709Z  INFO ai_memory_cli::commands::serve: auto-improve scheduler enabled but no LLM provider is configured; job not started
+2026-10-06T02:09:18.713714Z  INFO ai_memory_cli::commands::serve: scheduled maintenance started jobs=4
+2026-10-06T02:09:18.730706Z  INFO ai_memory_cli::commands::serve: HTTP Host-header allowlist allowed_hosts=["localhost", "127.0.0.1", "::1"]
+2026-10-06T02:09:18.730723Z  INFO ai_memory_cli::commands::serve: MCP Streamable HTTP transport mode stateful=false
+2026-10-06T02:09:18.732415Z  INFO ai_memory_cli::commands::serve: MCP HTTP server ready (POST /mcp, POST /hook, Ctrl-C to stop) local_addr=127.0.0.1:49374 auth=false body_limit_mb=10
+2026-10-06T02:09:27.501009Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2026-07-28"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T02:09:27.501149Z  WARN serve_inner: rmcp::service: response error id=1 error=ErrorData { code: ErrorCode(-32601), message: "server/discover", data: None }
+2026-10-06T02:09:27.501298Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T02:09:27.501311Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T02:09:27.501785Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T02:09:27.501965Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T02:09:27.501994Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T02:09:27.504884Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T02:09:27.505292Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T02:09:27.505322Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T02:09:48.730801Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:10:18.727541Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:10:48.727208Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:11:18.727055Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:11:48.727540Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:12:00.402219Z  INFO ai_memory_cli::commands::serve: shutdown signal received; draining signal="SIGTERM"
+2026-10-06T02:13:59.494754Z  INFO ai_memory_cli: ai-memory starting version="2.4.0" server_url=http://127.0.0.1:49374 data_dir=/home/edmar/.local/share/ai-memory bind=127.0.0.1:49374
+2026-10-06T02:13:59.494952Z  INFO ai_memory_cli::commands::serve: single-instance serve lock held lock=/home/edmar/.local/share/ai-memory/.serve.lock
+2026-10-06T02:13:59.627495Z  INFO refinery_core::traits: current version: 66
+2026-10-06T02:13:59.627523Z  INFO refinery_core::traits::sync: no migrations to apply
+2026-10-06T02:13:59.627528Z  INFO refinery_core::traits::sync: preparing to apply 0 migrations: Map {
+    iter: Iter(
+        [],
+    ),
+}
+2026-10-06T02:14:00.393109Z  INFO ai_memory_cli::commands::serve: embedder enabled provider="local" model="all-MiniLM-L6-v2" dim=384
+2026-10-06T02:14:00.434749Z  INFO ai_memory_cli::commands::serve: starting wiki watcher root=/home/edmar/.local/share/ai-memory/wiki workspace=default project=scratch
+2026-10-06T02:14:00.688638Z  INFO ai_memory_cli::commands::serve: active-project isolation mode mode=PerActor session_ttl_secs=3600 max_entries=4096
+2026-10-06T02:14:00.695804Z  INFO ai_memory_cli::commands::serve: AI_MEMORY_LLM_PROVIDER unset; memory_consolidate disabled, PreCompact falls back to rule-based checkpoint, lint runs rule-based only
+2026-10-06T02:14:00.696037Z  INFO ai_memory_cli::commands::serve: auto-improve scheduler enabled but no LLM provider is configured; job not started
+2026-10-06T02:14:00.696068Z  INFO ai_memory_cli::commands::serve: scheduled maintenance started jobs=4
+2026-10-06T02:14:00.700145Z  INFO ai_memory_cli::commands::serve: HTTP Host-header allowlist allowed_hosts=["localhost", "127.0.0.1", "::1"]
+2026-10-06T02:14:00.700185Z  INFO ai_memory_cli::commands::serve: MCP Streamable HTTP transport mode stateful=false
+2026-10-06T02:14:00.706798Z  INFO ai_memory_cli::commands::serve: MCP HTTP server ready (POST /mcp, POST /hook, Ctrl-C to stop) local_addr=127.0.0.1:49374 auth=false body_limit_mb=10
+2026-10-06T02:14:09.275904Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2026-07-28"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T02:14:09.275995Z  WARN serve_inner: rmcp::service: response error id=1 error=ErrorData { code: ErrorCode(-32601), message: "server/discover", data: None }
+2026-10-06T02:14:09.276131Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T02:14:09.276161Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T02:14:09.276850Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T02:14:09.277091Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T02:14:09.277135Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T02:14:09.289412Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T02:14:09.289524Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T02:14:09.289538Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T02:14:30.711328Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:15:00.710398Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:15:20.514737Z  INFO ai_memory_cli::commands::serve: shutdown signal received; draining signal="SIGTERM"
+2026-10-06T02:22:33.874414Z  INFO ai_memory_cli: ai-memory starting version="2.4.0" server_url=http://127.0.0.1:49374 data_dir=/home/edmar/.local/share/ai-memory bind=127.0.0.1:49374
+2026-10-06T02:22:33.874563Z  INFO ai_memory_cli::commands::serve: single-instance serve lock held lock=/home/edmar/.local/share/ai-memory/.serve.lock
+2026-10-06T02:22:34.014850Z  INFO refinery_core::traits: current version: 66
+2026-10-06T02:22:34.014873Z  INFO refinery_core::traits::sync: no migrations to apply
+2026-10-06T02:22:34.014878Z  INFO refinery_core::traits::sync: preparing to apply 0 migrations: Map {
+    iter: Iter(
+        [],
+    ),
+}
+2026-10-06T02:22:34.833177Z  INFO ai_memory_cli::commands::serve: embedder enabled provider="local" model="all-MiniLM-L6-v2" dim=384
+2026-10-06T02:22:34.869459Z  INFO ai_memory_cli::commands::serve: starting wiki watcher root=/home/edmar/.local/share/ai-memory/wiki workspace=default project=scratch
+2026-10-06T02:22:34.965735Z  INFO ai_memory_cli::commands::serve: active-project isolation mode mode=PerActor session_ttl_secs=3600 max_entries=4096
+2026-10-06T02:22:34.978932Z  INFO ai_memory_cli::commands::serve: AI_MEMORY_LLM_PROVIDER unset; memory_consolidate disabled, PreCompact falls back to rule-based checkpoint, lint runs rule-based only
+2026-10-06T02:22:34.979019Z  INFO ai_memory_cli::commands::serve: auto-improve scheduler enabled but no LLM provider is configured; job not started
+2026-10-06T02:22:34.979044Z  INFO ai_memory_cli::commands::serve: scheduled maintenance started jobs=4
+2026-10-06T02:22:34.980359Z  INFO ai_memory_cli::commands::serve: HTTP Host-header allowlist allowed_hosts=["localhost", "127.0.0.1", "::1"]
+2026-10-06T02:22:34.980373Z  INFO ai_memory_cli::commands::serve: MCP Streamable HTTP transport mode stateful=false
+2026-10-06T02:22:34.987953Z  INFO ai_memory_cli::commands::serve: MCP HTTP server ready (POST /mcp, POST /hook, Ctrl-C to stop) local_addr=127.0.0.1:49374 auth=false body_limit_mb=10
+2026-10-06T02:22:44.724197Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2026-07-28"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T02:22:44.724354Z  WARN serve_inner: rmcp::service: response error id=1 error=ErrorData { code: ErrorCode(-32601), message: "server/discover", data: None }
+2026-10-06T02:22:44.724380Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T02:22:44.724386Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T02:22:44.725486Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T02:22:44.725637Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T02:22:44.725920Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T02:22:44.749397Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T02:22:44.751729Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T02:22:44.751773Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T02:23:04.989691Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:23:34.984149Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:24:04.984340Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:24:34.988084Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:25:04.987573Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:25:34.986146Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:26:04.986171Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:26:34.984667Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:27:04.985300Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:27:34.983964Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:28:04.989050Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:28:34.988080Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:29:04.986450Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:29:34.985473Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:30:04.985061Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:30:34.984904Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:31:04.985745Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:31:34.984782Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:32:04.985076Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:32:34.989259Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:33:04.984199Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:33:34.986790Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:34:04.984167Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:34:34.985566Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:35:04.990006Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:35:34.983721Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:36:04.986655Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:36:34.988068Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:37:04.987734Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:37:34.986994Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:38:04.984129Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:38:34.987362Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:39:04.991218Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:39:34.985452Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:40:04.985832Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:40:34.989153Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:41:04.988849Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:41:34.984761Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:42:04.984133Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:42:34.983041Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:43:04.983438Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:43:35.011935Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:44:04.987155Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:44:34.985254Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:45:04.985495Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:45:34.985707Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:46:04.985590Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:46:34.985631Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:47:04.991319Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:47:34.986965Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:48:04.983804Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:48:34.986172Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:49:04.990177Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:49:34.984231Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:50:04.986745Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:50:35.017095Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:51:04.985677Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:51:34.983836Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:52:04.984024Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:52:34.983740Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:53:04.983993Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:53:34.984954Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:54:04.985873Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:54:34.984630Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:55:04.987097Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:55:34.985862Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:56:04.984839Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:56:34.983676Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:57:04.986907Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:57:34.987810Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:58:04.986512Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:58:34.985598Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:59:04.988295Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T02:59:34.984476Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:00:04.984117Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:00:34.983733Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:01:04.991195Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:01:34.982934Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:02:04.986739Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:02:34.986986Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:03:04.987977Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:03:34.984885Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:04:04.985434Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:04:34.983696Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:05:05.017407Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:05:34.987763Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:06:04.984206Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:06:34.987493Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:07:04.986497Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:07:34.984894Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:08:04.988426Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:08:34.983580Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:09:04.987865Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:09:34.990255Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:10:04.988217Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:10:34.985747Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:11:04.988720Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:11:34.984637Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:12:04.986525Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:12:34.984168Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:13:04.986862Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:13:34.988966Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:14:04.984805Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:14:34.984065Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:15:04.984285Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T03:15:13.899657Z  INFO ai_memory_cli::commands::serve: shutdown signal received; draining signal="SIGTERM"
+2026-10-06T06:12:00.129733Z  INFO ai_memory_cli: ai-memory starting version="2.4.0" server_url=http://127.0.0.1:49374 data_dir=/home/edmar/.local/share/ai-memory bind=127.0.0.1:49374
+2026-10-06T06:12:00.130369Z  INFO ai_memory_cli::commands::serve: single-instance serve lock held lock=/home/edmar/.local/share/ai-memory/.serve.lock
+2026-10-06T06:12:00.269969Z  INFO refinery_core::traits: current version: 66
+2026-10-06T06:12:00.270016Z  INFO refinery_core::traits::sync: no migrations to apply
+2026-10-06T06:12:00.270022Z  INFO refinery_core::traits::sync: preparing to apply 0 migrations: Map {
+    iter: Iter(
+        [],
+    ),
+}
+2026-10-06T06:12:01.087638Z  INFO ai_memory_cli::commands::serve: embedder enabled provider="local" model="all-MiniLM-L6-v2" dim=384
+2026-10-06T06:12:01.123162Z  INFO ai_memory_cli::commands::serve: starting wiki watcher root=/home/edmar/.local/share/ai-memory/wiki workspace=default project=scratch
+2026-10-06T06:12:01.176928Z  INFO ai_memory_cli::commands::serve: active-project isolation mode mode=PerActor session_ttl_secs=3600 max_entries=4096
+2026-10-06T06:12:01.183271Z  INFO ai_memory_cli::commands::serve: AI_MEMORY_LLM_PROVIDER unset; memory_consolidate disabled, PreCompact falls back to rule-based checkpoint, lint runs rule-based only
+2026-10-06T06:12:01.183303Z  INFO ai_memory_cli::commands::serve: auto-improve scheduler enabled but no LLM provider is configured; job not started
+2026-10-06T06:12:01.183308Z  INFO ai_memory_cli::commands::serve: scheduled maintenance started jobs=4
+2026-10-06T06:12:01.183809Z  INFO ai_memory_cli::commands::serve: HTTP Host-header allowlist allowed_hosts=["localhost", "127.0.0.1", "::1"]
+2026-10-06T06:12:01.183823Z  INFO ai_memory_cli::commands::serve: MCP Streamable HTTP transport mode stateful=false
+2026-10-06T06:12:01.185512Z  INFO ai_memory_cli::commands::serve: MCP HTTP server ready (POST /mcp, POST /hook, Ctrl-C to stop) local_addr=127.0.0.1:49374 auth=false body_limit_mb=10
+2026-10-06T06:12:10.185249Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2026-07-28"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T06:12:10.185436Z  WARN serve_inner: rmcp::service: response error id=1 error=ErrorData { code: ErrorCode(-32601), message: "server/discover", data: None }
+2026-10-06T06:12:10.185525Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T06:12:10.185555Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T06:12:10.189834Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T06:12:10.190014Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T06:12:10.190025Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T06:12:10.192480Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T06:12:10.192868Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T06:12:10.192876Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T06:12:31.208432Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:13:01.188797Z  INFO ai_memory_cli::commands::serve: scheduled forget sweep completed scopes=5 candidates_evaluated=51 evicted=0 compacted=0 expired=0 hard_deleted=0 observations_pruned=0 errors=0 elapsed_ms=2
+2026-10-06T06:13:01.199400Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:13:01.270664Z  INFO ai_memory_cli::commands::serve: scheduled rule-based lint completed scopes=5 findings=1 errors=0 elapsed_ms=82
+2026-10-06T06:13:31.197351Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:14:01.194803Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:14:31.198530Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:15:01.197682Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:15:31.198874Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:16:01.196165Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:16:31.196034Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:17:01.198356Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:17:31.198799Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:18:01.195348Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:18:31.197663Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:19:01.197813Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:19:31.196112Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:20:01.195407Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:20:31.198371Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:21:01.197364Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:21:31.196469Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:22:01.198693Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:22:31.200343Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:23:01.196052Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:23:31.196333Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:24:01.196722Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:24:31.196720Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:25:01.197733Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:25:31.196225Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:26:01.228675Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:26:31.198456Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:27:01.196732Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:27:31.196352Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:28:01.196941Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:28:31.198190Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:29:01.197260Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:29:31.197402Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:30:01.197423Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:30:31.197742Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:31:01.196064Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:31:31.197202Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:32:01.195061Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:32:31.199829Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:33:01.200198Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:33:31.195363Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:34:01.230823Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:34:31.198285Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:35:01.197262Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:35:31.197210Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:36:01.198643Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:36:31.198975Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:37:01.196187Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:37:31.196659Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:38:01.197571Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:38:31.195682Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:39:01.194542Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:39:31.198099Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:40:01.225510Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:40:31.196395Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:41:01.196859Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:41:31.197225Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:42:01.196801Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:42:31.198492Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:43:01.197172Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:43:31.195584Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:44:01.196144Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:44:31.196573Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:45:01.194947Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:45:31.198036Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:46:01.229450Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:46:31.196804Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:47:01.196775Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:47:31.198279Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:48:01.196563Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:48:31.222280Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:49:01.195818Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:49:31.197192Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:50:01.202790Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:50:31.196597Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:51:01.197558Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:51:31.196251Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:52:01.196736Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:52:31.198301Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:53:01.195463Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:53:31.197128Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:54:01.197503Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:54:31.204163Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:55:01.198915Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:55:31.196968Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:56:01.197752Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:56:31.197886Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:57:01.195976Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:57:31.197277Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:58:01.196568Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:58:31.197978Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:59:01.197227Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T06:59:31.196851Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:00:01.196596Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:00:31.196809Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:01:01.197596Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:01:31.198396Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:02:01.227522Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:02:31.209100Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:03:01.197350Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:03:31.197424Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:04:01.199801Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:04:31.198387Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:05:01.197284Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:05:31.196192Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:06:01.197041Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:06:31.196811Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:07:01.197295Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:07:31.196750Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:08:01.196707Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:08:31.195503Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:09:01.197043Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:09:31.196462Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:10:01.197976Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:10:31.197829Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:11:01.196352Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:11:31.198239Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:12:01.199039Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:12:31.199050Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:13:01.198976Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:13:31.195381Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:14:01.196531Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:14:31.197172Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:15:01.195565Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:15:31.199363Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:16:01.198032Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:16:31.198031Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:17:01.198155Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:17:31.199108Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:18:01.197305Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:18:31.197098Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:19:01.196540Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:19:31.197060Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:20:01.197335Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:20:31.198403Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:21:01.215750Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:21:31.196624Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:22:01.198067Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:22:31.196927Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:23:01.196234Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:23:31.196851Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:24:01.197120Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:24:31.197847Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:25:01.196835Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:25:31.198563Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:26:01.197050Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:26:31.196368Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:27:01.195439Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:27:31.198314Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:28:01.195801Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:28:31.196032Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:29:01.198184Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:29:31.201826Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:30:01.196662Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:30:31.197795Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:31:01.195619Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:31:31.197956Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:32:01.195764Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:32:31.198609Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:33:01.196823Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:33:31.196053Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:34:01.197652Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:34:31.197387Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:35:01.196759Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:35:31.198558Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:36:01.196262Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:36:31.196923Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:37:01.194584Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:37:31.232138Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T07:37:53.600915Z  INFO ai_memory_cli::commands::serve: shutdown signal received; draining signal="SIGTERM"
+2026-10-06T23:57:57.779397Z  INFO ai_memory_cli: ai-memory starting version="2.4.0" server_url=http://127.0.0.1:49374 data_dir=/home/edmar/.local/share/ai-memory bind=127.0.0.1:49374
+2026-10-06T23:57:57.779558Z  INFO ai_memory_cli::commands::serve: single-instance serve lock held lock=/home/edmar/.local/share/ai-memory/.serve.lock
+2026-10-06T23:57:57.954715Z  INFO refinery_core::traits: current version: 66
+2026-10-06T23:57:57.954756Z  INFO refinery_core::traits::sync: no migrations to apply
+2026-10-06T23:57:57.954767Z  INFO refinery_core::traits::sync: preparing to apply 0 migrations: Map {
+    iter: Iter(
+        [],
+    ),
+}
+2026-10-06T23:57:58.761724Z  INFO ai_memory_cli::commands::serve: embedder enabled provider="local" model="all-MiniLM-L6-v2" dim=384
+2026-10-06T23:57:58.839106Z  INFO ai_memory_cli::commands::serve: starting wiki watcher root=/home/edmar/.local/share/ai-memory/wiki workspace=default project=scratch
+2026-10-06T23:57:58.932503Z  INFO ai_memory_cli::commands::serve: active-project isolation mode mode=PerActor session_ttl_secs=3600 max_entries=4096
+2026-10-06T23:57:58.938427Z  INFO ai_memory_cli::commands::serve: AI_MEMORY_LLM_PROVIDER unset; memory_consolidate disabled, PreCompact falls back to rule-based checkpoint, lint runs rule-based only
+2026-10-06T23:57:58.938495Z  INFO ai_memory_cli::commands::serve: auto-improve scheduler enabled but no LLM provider is configured; job not started
+2026-10-06T23:57:58.938520Z  INFO ai_memory_cli::commands::serve: scheduled maintenance started jobs=4
+2026-10-06T23:57:58.939830Z  INFO ai_memory_cli::commands::serve: HTTP Host-header allowlist allowed_hosts=["localhost", "127.0.0.1", "::1"]
+2026-10-06T23:57:58.939858Z  INFO ai_memory_cli::commands::serve: MCP Streamable HTTP transport mode stateful=false
+2026-10-06T23:57:58.941606Z  INFO ai_memory_cli::commands::serve: MCP HTTP server ready (POST /mcp, POST /hook, Ctrl-C to stop) local_addr=127.0.0.1:49374 auth=false body_limit_mb=10
+2026-10-06T23:58:12.967293Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2026-07-28"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T23:58:12.967368Z  WARN serve_inner: rmcp::service: response error id=1 error=ErrorData { code: ErrorCode(-32601), message: "server/discover", data: None }
+2026-10-06T23:58:12.967481Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T23:58:12.967537Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T23:58:12.968300Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T23:58:12.968473Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T23:58:12.968504Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T23:58:12.971325Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParams { meta: None, protocol_version: ProtocolVersion("2025-11-25"), capabilities: ClientCapabilities { experimental: None, extensions: None, roots: None, sampling: None, elicitation: None, tasks: None }, client_info: Implementation { name: "rmcp", title: None, version: "2.2.0", description: None, icons: None, website_url: None } })
+2026-10-06T23:58:12.971661Z  INFO serve_inner: rmcp::service: input stream terminated
+2026-10-06T23:58:12.971693Z  INFO serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-06T23:58:28.953329Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T23:58:58.954808Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T23:59:28.951214Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
+2026-10-06T23:59:58.951130Z  INFO ai_memory_wiki::watcher: reconciliation pass complete indexed=51 skipped_orphans=0 skipped_purged_sessions=0
