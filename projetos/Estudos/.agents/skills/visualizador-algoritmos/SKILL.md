@@ -15,6 +15,11 @@ Traduzir conceitos abstratos em diagramas claros (Mermaid ou HTML interativo) pa
 - **Linguagens Formais e Compiladores:** Diagramas de transição de autômatos finitos (DFA / NFA), autômatos com pilha, grafos de sintaxe abstrata (AST), tabelas de transição e derivações de gramáticas livres de contexto.
 - **Estruturas de Dados e Programação:** Ponteiros, nós encadeados, pilhas, filas e heap.
 
+## Proteção do Alvo Cognitivo (Regra Inegociável)
+Para não quebrar a política pedagógica do Tutor Socrático:
+1. **Exemplo Análogo Primeiro:** Antes da tentativa do aluno, a visualização DEVE ser aplicada exclusivamente a um **problema ou algoritmo análogo**, nunca ao exercício/tarefa exata que o aluno precisa resolver.
+2. **Rastreamento do Exercício Real:** Só é permitido gerar a visualização ou rastreamento passo a passo do exercício real do aluno **após** ele ter feito uma tentativa comprovada ou em situação de bloqueio real diagnosticado pelo Tutor.
+
 ## Ativação Automática (Sem comando do usuário)
 O agente deve acionar esta skill quando:
 1. O usuário demonstrar dificuldade em enxergar o fluxo de execução de um algoritmo ou recursão.
