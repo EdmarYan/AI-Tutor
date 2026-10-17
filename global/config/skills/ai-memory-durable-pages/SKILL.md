@@ -12,6 +12,9 @@ Use this skill only for deliberate durable wiki mutations. Routine session captu
 
 - `memory_write_page` writes a durable wiki page for permanent project knowledge.
 - `memory_delete_page` removes a durable wiki page by exact path.
+- `memory_restore_page` lists a page's checkpoints (no `rev`) or writes an
+  earlier version back (with `rev`), including a deleted page. It is admin
+  only on a multi-user server and does not reach `scope: "profile"` pages.
 
 ## Writing durable memory
 
@@ -36,6 +39,18 @@ RFC3339 instant or a bare `YYYY-MM-DD` (the end of that day in UTC). After the
 TTL, normal search, recent, and briefing reads hide the page; the next forget
 sweep deletes it. A TTL outranks `pinned`, so do not combine them unless the user
 has deliberately requested that behavior.
+
+## Writing a session's pages yourself
+
+When the user asks to consolidate the session you are taking part in, write its pages with your own model instead of the server's: read the session's raw observations first (the retrieval skill covers that read), then write each page with `memory_write_page` passing the same `session_id`, which records the session as evidence and settles its queued consolidation job. Match the server's multi-page layout, at most five pages:
+
+- `sessions/<session_id>.md`: the session narrative, `tier: "episodic"`, `kind: "fact"`.
+- `concepts/<slug>.md`: evergreen concept pages, `tier: "semantic"`, `kind: "fact"`.
+- `decisions/<short>.md`: ADR-style records of a choice made, `tier: "semantic"`, `kind: "decision"`.
+- `gotchas/<slug>.md`: failure modes and surprises, `tier: "semantic"`, `kind: "gotcha"`.
+- `_rules/<slug>.md`: a durable project convention written as a standalone instruction, `tier: "semantic"`, `kind: "rule"`.
+
+Only split out what the session actually established; a short session is one session page. Record what was said and done, and never turn a user's question into a confirmed decision.
 
 ## Project rules belong in instructions first
 
@@ -78,4 +93,4 @@ Pinned pages are exempt from retention decay and curation, and the auto-improvem
 
 ## Standing user/team preferences go to the cross-project profile
 
-When the fact is a standing preference that should apply to EVERY project — technology choices ("always use pnpm workspaces"), code style ("prefer composition over inheritance"), personal conventions ("never `--force` without asking") — call `memory_write_page` with `scope: "profile"` instead of the current project. The page joins the cross-project profile under `profile/` (pass a path like `tools/pnpm.md`; it is stored as `profile/tools/pnpm.md`), every project's session start lists it as a default, and default memory reads surface it as `global_scope_hits`. Start the body with a `# Title` and one imperative line; optional frontmatter `applies_to` (e.g. `rust`) scopes it to projects on that stack. Remove one with `memory_delete_page` and `scope: "profile"`. `scope: "global"` still writes the shared `_global` scope directly. Neither scope can be combined with workspace/project arguments. Use it only for genuinely cross-project preferences; project-specific rules stay in the project (or its instruction file, per the section above). A rules file always wins over the profile: the profile is the default for what the repository does not say.
+When the fact is a standing preference that should apply to EVERY project — technology choices ("always use pnpm workspaces"), code style ("prefer composition over inheritance"), personal conventions ("never `--force` without asking") — call `memory_write_page` with `scope: "profile"` instead of the current project. The page joins the cross-project profile under `profile/` (pass a path like `tools/pnpm.md`; it is stored as `profile/tools/pnpm.md`), every project's session start lists it as a default, and default memory reads surface it as `global_scope_hits`. Start the body with a `# Title` and one imperative line; pass `applies_to` (e.g. `["rust"]`) to scope it to projects on that stack, and `enforced_by` (e.g. `"pre-push hook"`) when something already enforces it, which keeps it out of the session-start digest; both are accepted only for profile entries, and a rewrite that omits them clears them. Remove one with `memory_delete_page` and `scope: "profile"`. `scope: "global"` still writes the shared `_global` scope directly. Neither scope can be combined with workspace/project arguments. Use it only for genuinely cross-project preferences; project-specific rules stay in the project (or its instruction file, per the section above). A rules file always wins over the profile: the profile is the default for what the repository does not say.
